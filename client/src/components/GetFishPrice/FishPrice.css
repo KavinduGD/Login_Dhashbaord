@@ -1,0 +1,241 @@
+/* body {
+  background: #fff; 
+  background-image: url('../../backgroundimage/fishprice.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+} */
+
+.FishPriceTable {
+  width: 70%;
+  background-color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.addButton {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(249, 227, 36);
+  color: rgb(16, 16, 16);
+  font-weight: 500;
+  box-shadow: 1px 1px 8px rgba(39, 253, 71, 0.832);
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.addButton:hover {
+  transform: scale(1.1);
+}
+
+.addButton .link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.FishPriceTable table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.FishPriceTable table thead th {
+  background-color: rgb(186, 163, 252);
+  color: rgb(42, 38, 38);
+  padding: 10px;
+}
+
+.header1 {
+  background-color: rgb(218, 201, 11);
+  color: rgb(16, 16, 16);
+}
+
+.header2 {
+  background-color: rgb(176, 156, 248);
+  color: rgb(255, 255, 255);
+}
+
+.evenRow {
+  background-color: rgb(230, 234, 252);
+}
+
+.oddRow {
+  background-color: rgb(255, 255, 255);
+}
+
+.FishPriceTable table tbody td {
+  padding: 10px;
+  text-align: center;
+}
+
+.actionButtons button {
+  border: 0;
+  outline: none;
+  background: rgb(245, 57, 57);
+  padding: 8px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actionButtons a {
+  background: rgb(52, 183, 52);
+  padding: 6px 10px;
+  color: white;
+  border-radius: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.date {
+  color: #000101;
+  text-shadow: 2px 2px 4px #cccccc;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.Select {
+  &__control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  &__menu {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  &__option {
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.select-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  margin-right: 10px;
+}
+
+.grade-select {
+  width: 100px; /* Set the width of the dropdown */
+  margin-left: auto;
+}
+
+.downloadButtonContainer {
+  text-align: right;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.downloadButton {
+  background-color: #52a0ff;
+  border: none;
+  color: rgb(6, 6, 6);
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.downloadButton:hover {
+  background-color: rgb(255, 95, 95);
+  color: rgb(6, 6, 6);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right edges */
+  align-items: center;
+}
+
+.back-button {
+  background-color: #74ff79; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0d2e0f; /* Darker Green */
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.searchBar input::placeholder {
+  color: #999;
+}
+
+.searchBar input:focus {
+  outline: none;
+  border-color: #007bff; /* Change color on focus */
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+}
+
+.confirmationModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmationContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.confirmationButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.confirmationButtons button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmationButtons button:nth-child(1) {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.confirmationButtons button:nth-child(2) {
+  background-color: #4caf50;
+  color: #fff;
+}
